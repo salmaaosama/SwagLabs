@@ -85,7 +85,7 @@ public class SiteTest {
         //Click on the "Add to Cart" button.
         //Verify that the product is added to the cart.
         @Test
-        public void addToCart() throws InterruptedException {
+        public void addToCart(){
             driver.navigate().to("https://www.saucedemo.com/");
             login.LoginSteps(driver,"standard_user","secret_sauce" );
             home.AddElmToCart(driver).click();
@@ -108,7 +108,7 @@ public class SiteTest {
         //Click on the "Remove" button for a product.
         //Verify that the product is removed from the cart.
         @Test
-        public void removeFromCArt() throws InterruptedException {
+        public void removeFromCArt(){
             driver.navigate().to("https://www.saucedemo.com/");
             login.LoginSteps(driver,"standard_user","secret_sauce" );
             home.AddElmToCart(driver).click();
